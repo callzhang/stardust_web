@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title%></title>
+	<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/main.css">
+	<script type="text/javascript" src='../public/js/jquery-1.12.2.min.js'></script>
+</head>
+<body>
+<div class="">
+    <form action="email" method="post" enctype="multipart/form-data">
+        <input type="text" name="text">
+        <input type="file" name="upload" id="uploadForm">
+        <input type="submit" name="" value='提交'>
+    </form>
+</div>
+<script type="text/javascript">
+	function doUpload() {  
+     var formData = new FormData($( "#uploadForm" )[0]);
+     var text = $('input[name="text"]').val();  
+     $.ajax({  
+          url: 'email' ,  
+          type: 'POST',  
+          data: {name:formData,text:text},  
+          async: false,  
+          cache: false,  
+          contentType: false,  
+          processData: false,  
+          success: function (e) {  
+              console.log(e);
+          },  
+          error: function (returndata) {  
+              alert(returndata);  
+          }  
+     });  
+}  
+</script>
+</body>
+</html>
