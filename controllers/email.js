@@ -39,7 +39,7 @@ exports.email_post = function(req, res){
 	  	});  
 		 var mailOptions = {  
 		    from: 'contact@stardust.ai',   
-		    to: 'contact@stardust.ai', 
+		    to: 'contacts@stardust.ai', 
 		    subject: '网站提交内容',  
 		    //text: 'Hello world', // 文本  
 		    html: '<h3 style="font-size:16px;font-weight: bold;">用户输入内容</h3><p style="margin-left: 20px;">用户姓名：'+msg.name+'</p><p style="margin-left: 20px;">邮箱：'+msg.email+'</p><p style="margin-left: 20px;">手机号：'+msg.phone+'</p><p style="margin-left: 20px;">留言板：'+msg.demand+'</p>',
