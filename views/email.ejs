@@ -16,25 +16,25 @@
     </form>
 </div>
 <script type="text/javascript">
-	function doUpload() {  
+	function doUpload() {
      var formData = new FormData($( "#uploadForm" )[0]);
-     var text = $('input[name="text"]').val();  
-     $.ajax({  
-          url: 'email' ,  
-          type: 'POST',  
-          data: {name:formData,text:text},  
-          async: false,  
-          cache: false,  
-          contentType: false,  
-          processData: false,  
-          success: function (e) {  
+     var text = $('input[name="text"]').val();
+     $.ajax({
+          url: 'email' ,
+          type: 'POST',
+          data: {name:formData,text:text},
+          async: false,
+          cache: false,
+          contentType: false,
+          processData: false,
+          success: function (e) {
               console.log(e);
-          },  
-          error: function (returndata) {  
-              alert(returndata);  
-          }  
-     });  
-}  
+          },
+          error: function (returndata) {
+              alert(returndata);
+          }
+     });
+}
 </script>
 </body>
 </html>

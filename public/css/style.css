@@ -5,9 +5,9 @@ h2{
 label{
     font-weight: normal;
 }
-input:-webkit-autofill {  
-    -webkit-box-shadow: 0 0 0px 1000px white inset !important;  
-}  
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
 .nav-wrap{
     position: absolute;
     top: 20px;
@@ -25,11 +25,15 @@ input:-webkit-autofill {
     padding-top: 16px;
     vertical-align: middle;
 }
-.nav-wrap .navbar-brand .img-bg{
+.nav-wrap .navbar-brand .img-bg, .nav-wrap .navbar-brand .img-bg-en{
     display: inline-block;
     width: 135px;
     height: 27px;
     background: url('../img/logo.png');
+    background-size: 100% 100%;
+}
+.nav-wrap .navbar-brand .img-bg-en{
+    background: url('../img/logo_en.png');
     background-size: 100% 100%;
 }
 .nav-wrap .navbar-toggle .icon-bar{
@@ -76,7 +80,7 @@ input:-webkit-autofill {
 .nav-wrap .navbar-toggle{
     margin-right: 5px;
     margin-top: 11px;
-} 
+}
 .nav-wrap-bottom{
     position: fixed;
     top: 0;
@@ -204,11 +208,18 @@ input:-webkit-autofill {
     color: #fff;
     display: none;
 }
-.banner-wrap .banner-text .img-box{
-   display: inline-block;
-   width: 733px;
-   height: 59px;
-   background: url('../img/api.png');
+.banner-wrap .banner-text .img-box, .banner-wrap .banner-text .img-box-en{
+    display: inline-block;
+    width: 490px;
+    height: 59px;
+    background: url('../img/api.png');
+    background-size: contain;
+}
+.banner-wrap .banner-text .img-box-en{
+    width: 733px;
+    height: 57px;
+    background: url('../img/api_en.png');
+    background-size: contain;
 }
 .banner-wrap .banner-text p{
     font-size: 18px;
@@ -218,7 +229,7 @@ input:-webkit-autofill {
 }
 .banner-wrap .banner-text .btn-up{
     position: relative;
-    // transition: 0.4s ease;
+    /* transition: 0.4s ease; */
     display: inline-block;
     width: 210px;
     height: 60px;
@@ -290,7 +301,41 @@ input:-webkit-autofill {
     height: 60px;
     bottom: -1px;
 }
-
+/* What 段落 */
+.what-wrap{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    background: #f1f1f5;
+}
+.what-wrap-title{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.what-wrap-title h2{
+    margin: 0;
+    margin-bottom: 18px;
+}
+.what-wrap-title .info{
+    letter-spacing: 4px;
+}
+.mr25{
+    margin-right: 25px;
+}
+.what-wrap .container{
+    width: 900px;
+}
+.what-wrap h2{
+    text-align: center;
+    line-height: 1;
+}
+.what-wrap .info{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom:30px;
+}
+/* Serve 段落 */
 .serve-wrap{
     padding-top: 60px;
     padding-bottom: 80px;
@@ -587,7 +632,7 @@ input:-webkit-autofill {
     color:#fff;
     padding-left: 25px;
     padding-right: 25px;
-    overflow:hidden; 
+    overflow:hidden;
     resize:none;
     outline: none;
 }
@@ -612,7 +657,7 @@ label{
     color: red;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-     color: #fff;opacity:0.6; 
+     color: #fff;opacity:0.6;
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
@@ -661,7 +706,7 @@ input:-ms-input-placeholder{
     opacity: 0;
     filter: alpha(opacity=0);
     cursor: pointer;
-  
+
 }
 .apply-wrap form .sub-btn{
     display: inline-block;
@@ -692,6 +737,24 @@ input:-ms-input-placeholder{
     float: right;
     line-height: 50px;
 
+}
+.apply-wrap .btn-center {
+    display: inline-block;
+    margin-top: 190px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    background-color: #68498d;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+.apply-wrap .btn-center:hover{
+    background-color: #4f3173;
+    text-decoration: none;
 }
 .footer{
     padding-top: 30px;
