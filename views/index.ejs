@@ -2,15 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="高精度数据标注，加速你的机器学习模型。">
+    <meta name="keywords" content="stardust,startask,星尘数据,ai,人工智能,training data,训练数据">
     <title>Stardust</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="../public/img/favicon.ico" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
     <link rel="stylesheet" type="text/css" href="../public/css/media.css">
-
 </head>
 <body>
 <header class="navbar nav-wrap  nav-ph">
@@ -23,11 +23,12 @@
                 <span class="icon-bar"></span>
             </button>
            <div class="navbar-brand">
-                <a href="/"><div class="img-bg"></div></a>
-                    <div class="cut-box">
-                        <a href="/">中文</a>/<a href="/en">EN</a>
-                    </div>
-
+                <a href="/">
+                    <div class="img-bg"></div>
+                </a>
+                <div class="cut-box">
+                    <a href="/?force=1">中文</a>/<a href="/en?force=1">EN</a>
+                </div>
            </div>
         </div>
         <nav class="collapse navbar-collapse">
@@ -57,22 +58,21 @@
             <span class="line line-left"></span>
         </a>
     </div>
-</div>
-<div class="what-wrap" id="what-wrap">
-    <div class="container">
-        <div class="serve-wrap-title" data-scroll-reveal="enter top and move 100px over 1s wait 0s">
-            <h2>什么是训练数据</h2>
-            <p class="info">
-                训练数据就是机器学习模型用来学习的数据。它通常都是由人工标注生成的，因此也是AI公司比较费钱、费时、费力的一部分工作。
-            </p>
-        </div>
-    </div>
+    <a href="javascript:;" class="btn btn-link" data-toggle="modal" data-target="#what-is-training-data">
+        什么是训练数据？ <i class="glyphicon glyphicon-plus-sign"></i>
+    </a>
 </div>
 <div class="serve-wrap" id="serve-wrap">
     <div class="container">
         <div class="serve-wrap-title" data-scroll-reveal="enter top and move 100px over 1s wait 0s">
-            <h2>我们提供多样的标注工具</h2>
-            <p class="info">我们也可以为你提供定制化的标注解决方案。</p>
+            <div id="serve-title-1">
+                <h2>我们提供多样的标注工具</h2>
+                <p class="info">我们也可以为你提供定制化的标注解决方案。</p>
+            </div>
+            <div id="serve-title-2">
+                <h2>交付质量是我们最关注的事</h2>
+                <p class="info">星尘数据的专业团队将在最优的性价比区间，为您提供流畅、成熟的合作体验。</p>
+            </div>
         </div>
         <div class="row">
 
@@ -288,10 +288,10 @@
     <div class="container">
         <h2 data-scroll-reveal="enter top and move 100px over 1s wait 0s" class="csshub-shine">立即开始定制<span class="block-p">你的专属数据</span></h2>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs">
                 <a href="http://startask.net/" class="btn-center" target="_blank">快速开始</a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
                 <form id="form" method="post" action="email" enctype="multipart/form-data" accept-charset="utf-8">
                     <div class="input-box">
                         <input type="text" name="name" placeholder="姓名/必填">
@@ -318,117 +318,40 @@
 </div>
 <footer class="footer">
 <div class="container">
-    <div class="img-box"><img src="../public/img/logo_b.png"></div>
+    <div class="img-box"><img src="../public/img/logo_color.png"></div>
     <p class="email-p"><a href="mailto:contact@stardust.ai">contacts@stardust.ai</a></p>
     <p class="copy">© 2017 stardust.ai.Training Data as a Service and TDaaS are registered trademarks of stardust.ai</p>
 </div>
 </footer>
+
+<div id="what-is-training-data" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">什么是训练数据？</h4>
+        </div>
+        <div class="modal-body">
+            <p>
+                    训练数据就是机器学习模型用来学习的数据。它通常都是由人工标注生成的，因此也是AI公司比较费钱、费时、费力的一部分工作。
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <script type="text/javascript" src="../public/js/jquery.js"></script>
 <script type="text/javascript" src='../public/js/bootstrap.min.js'></script>
 <script type="text/javascript" src='../public/js/jquery.nav.js'></script>
 <script type="text/javascript" src='../public/js/scrollReveal.js'></script>
 <script type="text/javascript" src='../public/js/jquery.validate.min.js'></script>
 <script type="text/javascript" src='../public/js/layer.js'></script>
-<script type="text/javascript">
-$(function(){
-    $('.banner-text').show();
-    window.scrollReveal = new scrollReveal({reset: false,mobile: true, easing:'ease'});
-    $('.btn-up').click(function(){
-        $('html,body').animate({scrollTop: $('#apply-wrap').offset().top }, 1000);
-        return false;
-    });
-    $('.navbar-toggle').click(function(){
-    if ($('.collapse').is(':hidden')) {
-        $('.collapse').slideDown();
-    }else{
-        $('.collapse').slideUp();
-    }
-})
-$('.navbar-nav li a').click(function(){
-    $('.collapse').slideUp();
-    return false;
-})
-    // 验证表单
-    $('#form').validate({
-            rules:{
-                name: {
-                    required:true,
-                },
-                email: {
-                    required:true,
-                    email:true
-                },
-                demand: {
-                    required:true,
-                }
-
-             },
-           messages :{
-                name: {
-                    required:'*不能为空',
-                },
-                email: {
-                    required:'*不能为空',
-                    email:"输入邮箱有误"
-                },
-                demand: {
-                    required:'*不能为空',
-                }
-
-           }
-    })
-    $(".input-file").on("change","input[type='file']",function(){
-        var filePath =$(this).val();
-        var arr=filePath.split('\\');
-        var fileName=arr[arr.length-1];
-         $(".info-file").html(fileName);
-    })
-
-    $('.sub-btn').click(function(){
-        var formData = new FormData($('input[textarea="demand"]')[0]);
-        if($("#form").valid()){
-            var form = new FormData(document.getElementById("form"));
-            $.ajax({
-                url:"email",
-                type:"post",
-                data:form,
-                cache: false,
-                processData: false,
-                contentType: false,
-                beforeSend:function(){
-                    layer.load(2);
-                },
-                success:function(data){
-                    if (data.code ==2) {
-                         layer.msg('请使用公司邮箱!!');
-                    }else if(data.code ==1){
-                        layer.msg('恭喜您提交成功！');
-                    }
-
-                 },
-                error:function(e){
-                   layer.msg('网络错误，请重试！！');
-                 },
-                complete:function(){
-                    layer.closeAll('loading');
-                }
-            });
-        }
-    })
-
-   // 导航
-   $('.nav').onePageNav();
-   $(window).scroll(function(e){
-    if ($(window).scrollTop()>$('.banner-wrap').height()-2) {
-        $('.navbar').addClass('nav-wrap-bottom')
-    }else if($(window).scrollTop()<$('.banner-wrap').height()){
-        $('.navbar').removeClass('nav-wrap-bottom');
-    }
-
-   })
-
-});
-
+<script>
+    currentLang = 'zh_cn';
 </script>
+<script type="text/javascript" src='../public/js/app.js'></script>
 </body>
 </html>

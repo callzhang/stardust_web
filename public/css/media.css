@@ -1,5 +1,5 @@
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 }
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -35,13 +35,15 @@
     .nav-wrap .navbar-brand{
         padding-top:20px;
     }
-    .nav-wrap .navbar-brand .img-bg{
+    .nav-wrap .navbar-brand .img-bg, .nav-wrap .navbar-brand .img-bg-en{
         display: inline-block;
         width: 100px;
         height: 20px;
+        background: url('../img/logo_color.png');
+        background-size: 100% 100%;
     }
-    .nav-ph .navbar-brand .img-bg{
-        background: url('../img/logo_b.png');
+    .nav-ph .navbar-brand .img-bg-en{
+        background: url('../img/logo_color_en.png');
         background-size: 100% 100%;
     }
     .nav-ph .navbar-toggle .icon-bar {
@@ -79,11 +81,20 @@
         font-size: 16px;
         letter-spacing: 10px;
     }
-    .banner-wrap .banner-text .img-box{
+    .banner-wrap .banner-text .img-box {
         width: 200px;
-        height: 60px;
-        background: url('../img/api_min1.png');
-        background-size: 100% 100%;
+        height: 24px;
+        background: url('../img/main_title_mobile.png');
+        background-size: contain;
+    }
+    .banner-wrap .banner-text .img-box-en {
+        width: 200px;
+        height: 54px;
+        background: url('../img/main_title_mobile_en.png');
+        background-size: contain;
+    }
+    .banner-wrap .banner-title {
+        padding: 0 15px;
     }
     .banner-wrap .banner-text .btn-up{
         height: 45px;
@@ -240,11 +251,11 @@
    }
     .join-wrap .col-md-2:nth-child(5) .img-box img{
         margin-left: -1px;
-        
+
    }
      .join-wrap .col-md-2:nth-child(6) .img-box img{
         margin-left: -38px;
-        
+
    }
    /* 上传 */
    .apply-wrap{

@@ -27,14 +27,14 @@ input:-webkit-autofill {
 }
 .nav-wrap .navbar-brand .img-bg, .nav-wrap .navbar-brand .img-bg-en{
     display: inline-block;
-    width: 135px;
+    width: 129px;
     height: 27px;
-    background: url('../img/logo.png');
-    background-size: 100% 100%;
+    background: url('../img/logo_white.png');
+    background-size: contain;
 }
 .nav-wrap .navbar-brand .img-bg-en{
-    background: url('../img/logo_en.png');
-    background-size: 100% 100%;
+    background: url('../img/logo_white_en.png');
+    background-size: contain;
 }
 .nav-wrap .navbar-toggle .icon-bar{
     background-color: #fff;
@@ -104,12 +104,16 @@ input:-webkit-autofill {
     background: #725693;
     color: #fff;
 }
-.nav-wrap-bottom .navbar-brand .img-bg{
+.nav-wrap-bottom .navbar-brand .img-bg, .nav-wrap-bottom .navbar-brand .img-bg-en{
     display: inline-block;
-    width: 135px;
+    width: 133px;
     height: 27px;
-    background: url('../img/logo_b.png');
-    background-size: 100% 100%;
+    background: url('../img/logo_color.png');
+    background-size: contain;
+}
+.nav-wrap-bottom .navbar-brand .img-bg-en {
+    background: url('../img/logo_color_en.png');
+    background-size: contain;
 }
 .nav-wrap-bottom .navbar-collapse li:last-child>a{
     color: #333;
@@ -212,13 +216,13 @@ input:-webkit-autofill {
     display: inline-block;
     width: 490px;
     height: 59px;
-    background: url('../img/api.png');
+    background: url('../img/main_title.png');
     background-size: contain;
 }
 .banner-wrap .banner-text .img-box-en{
     width: 733px;
     height: 57px;
-    background: url('../img/api_en.png');
+    background: url('../img/main_title_en.png');
     background-size: contain;
 }
 .banner-wrap .banner-text p{
@@ -245,6 +249,15 @@ input:-webkit-autofill {
     background: #fff;
     color: #68498d;
     border: 1px solid rgba(255, 255, 255, 1);
+}
+.banner-wrap .btn-link {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+}
+.banner-wrap .btn-link:hover{
+    text-decoration: none;
 }
 /* 幽灵按钮 */
 .banner-wrap .banner-text .btn-up .line {
