@@ -368,9 +368,6 @@ input:-webkit-autofill {
 .mr25{
     margin-right: 25px;
 }
-.serve-wrap .container{
-    width: 900px;
-}
 .serve-wrap h2{
     text-align: center;
     line-height: 1;
@@ -489,11 +486,8 @@ input:-webkit-autofill {
 }
 .excuse-wrap .img-box img{
     margin-top: 10px;
-    height: 370px;
-    width: auto;
-}
-.excuse-wrap .img-right{
-    float: right;
+    height: auto;
+    width: 100%;
 }
 /* 服务流程 */
 .flow-wrap{
@@ -611,7 +605,6 @@ input:-webkit-autofill {
 /* 申请 */
 .apply-wrap{
     width: 100%;
-    height: 700px;
     background-color: #323232;
     background-image: linear-gradient(rgba(36,36,36,0.6),rgba(36,36,36,0.6)),url(../img/bg.jpg);
     background-position: center center;
@@ -751,9 +744,13 @@ input:-ms-input-placeholder{
     line-height: 50px;
 
 }
+.apply-wrap .or {
+    display: block;
+    margin: 25px 0;
+    text-align: center;
+}
 .apply-wrap .btn-center {
     display: inline-block;
-    margin-top: 190px;
     width: 100%;
     height: 50px;
     line-height: 50px;

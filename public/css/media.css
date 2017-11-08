@@ -8,7 +8,20 @@
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (max-width: 768px) {
-
+    .banner-wrap .banner-text .img-box {
+        width: 487px;
+        height: 47px;
+    }
+    .banner-wrap .banner-text .img-box-en {
+        width: 600px;
+        height: 47px;
+    }
+    .banner-wrap .banner-text .banner-title{
+        padding: 0 90px;
+    }
+    .banner-wrap .banner-text .banner-title-en{
+        padding: 0 40px;
+    }
 }
 /* 小屏幕（手机，大于等于 560px） */
 @media (max-width: 560px) {
@@ -93,7 +106,7 @@
         background: url('../img/main_title_mobile_en.png');
         background-size: contain;
     }
-    .banner-wrap .banner-title {
+    .banner-wrap .banner-text .banner-title, .banner-wrap .banner-text .banner-title-en{
         padding: 0 15px;
     }
     .banner-wrap .banner-text .btn-up{
